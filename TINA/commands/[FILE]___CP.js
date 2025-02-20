@@ -2,7 +2,7 @@
 module.exports.config = {
   name: "/",
   version: "1.0.0",
-  has permssion: 0,
+  has Permssion: 0,
   credits: "Islamick Cyber",
   description: "Islamick post rendom",
   commandcategory: "𝐈 𝐂 𝐂",
