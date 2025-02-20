@@ -63,7 +63,7 @@ function startBot(message) {
 //========= Check update from Github =========//
 ////////////////////////////////////////////////
 
-axios.get("https://raw.githubusercontent.com/HACKER-NAZRUL-420/TINA/main/package.json")
+axios.get("https://raw.githubusercontent.com/mr-nazrul-404/fbbot/main/package.json")
     .then((res) => {
         logger(res.data.name, "[ NAME ]");
         logger(`Version: ${res.data.version}`, "[ VERSION ]");
