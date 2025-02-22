@@ -42,13 +42,13 @@ var callback = () => api.sendMessage({body:`
 └─────────────···◈
 ⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆
 
-         🏮°ᴄᴏᴜɴᴛʀᴀᴄᴛ°🏮
+   🏮°ᴄᴏᴜɴᴛʀᴀᴄᴛ°🏮
 
-✮͢ꓸ⃟ꓸ⃟ꓸ✮͢  : https://www.facebook.com/profile.php?id=100081939442749
-✮͢ꓸ⃟ꓸ⃟ꓸ✮͢    :
+🩷✮͢ꓸ⃟ꓸ⃟ꓸ✮͢  : https://www.facebook.com/profile.php?id=100081939442749
+🩷✮͢ꓸ⃟ꓸ⃟ꓸ✮͢    :
 https://m.me/j/AbZEOcdMGQYprT74/
-✮͢ꓸ⃟ꓸ⃟ꓸ✮͢ : https://www.facebook.com/jahidhasanrajib500
-✮͢ꓸ⃟ꓸ⃟ꓸ✮͢ :
+🩷✮͢ꓸ⃟ꓸ⃟ꓸ✮͢ : https://www.facebook.com/jahidhasanrajib500
+🩷✮͢ꓸ⃟ꓸ⃟ꓸ✮͢ :
 wa.me/+8801859551262`,attachment: fs.createReadStream(__dirname + "/cache/Cyber.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/Cyber.png"));  
       return request(encodeURI(`https://graph.facebook.com/100081939442749/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
