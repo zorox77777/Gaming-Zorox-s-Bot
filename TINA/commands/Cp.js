@@ -5,7 +5,7 @@ module.exports.config = {
   has Permssion: 0,
   credits: "Islamick Cyber",
   description: "Islamick post and caption rendom ",
-  commandCategory: "  ",
+  commandCetagory: "prefix",
   usages: "/",
   cooldowns: 11,
   dependencies: {
