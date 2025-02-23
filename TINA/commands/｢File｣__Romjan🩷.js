@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "রমজান",
+	name: "romjan",
 	version: "1.0.0",
 	hasPermssion: 0,
 	credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
@@ -9,7 +9,7 @@ module.exports.config = {
 }
 
 module.exports.run = function ({ event, api }) {
-    const t = Date.parse("March 23, 2023 00:00:00") - Date.parse(new Date());
+    const t = Date.parse("March 1, 2025 00:00:00") - Date.parse(new Date());
     const seconds = Math.floor( (t/1000) % 60 );
     const minutes = Math.floor( (t/1000/60) % 60 );
     const hours = Math.floor( (t/(1000*60*60)) % 24 );
