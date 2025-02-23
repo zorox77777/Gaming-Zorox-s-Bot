@@ -5,9 +5,8 @@ module.exports.config = {
   name: "sura",
   version: "1.6",
   credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
-  prefix:true,
- Permssion:0,
-  category: "sura",
+  hasPermssion:0,
+  commandCategory: "sura",
   description:"playing sura",
   usages:"[command name]"
 };
