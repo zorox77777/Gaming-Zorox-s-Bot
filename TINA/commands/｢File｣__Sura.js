@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event }) => {
   try {
-    const data = JSON.parse(fs.readFileSync(__dirname + '/cache/Cyber.json', 'utf8'));
+    const data = JSON.parse(fs.readFileSync(__dirname + '/cyber/Cyber.json', 'utf8'));
 
     let optionMessage = "Please select a Surah:\n";
     const keys = Object.keys(data);
