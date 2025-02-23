@@ -4,11 +4,10 @@ const request = require('request');
 module.exports.config = {
     name: "adminnoti",
     version: "1.0.0",
-    permission: 2,
-    credits: "mtx",
+    hasPermission: 2,
+    credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
     description: "",
-    prefix: true,
-    category: "admin",
+    commandCategory: "admin",
     usages: "[msg]",
     cooldowns: 5,
 }
