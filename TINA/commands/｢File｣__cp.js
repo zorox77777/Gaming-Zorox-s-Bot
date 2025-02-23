@@ -1,15 +1,14 @@
-/** THIS FULL BOT COMMAND FILE AND ALL API CREATE BY ISLAMICK CYBET CHAT DONT CHINGE THE MY ANY CODE  **/
 module.exports.config = {
   name: "/",
   version: "1.0.0",
-  has Permssion: 0,
+  hasPermssion: 0,
   credits: "Islamick Cyber",
   description: "Islamick post rendom",
-  CommandCategory: "  ",
+  CommandCategory: "prefix",
   usages: "ig",
   cooldowns: 11,
-  dependencies: 
-{
+  dependencies:
+  {
     "request":"",
     "fs-extra":"",
     "axios":""
@@ -20,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["•—»✨「    ｣ ✨«—•\n༆-✿Prefix Event ༊࿐\n╭•┄┅═══❁❁═══┅┄•╮\n\n᭄࿐-ইচ্ছে!!!গুলো!!!যদি!!!পবিত্র!!হয়!✿᭄\n\n✿᭄তাহলে!!!স্বপ্ন!!! গুলো..\n\n✿᭄ ࿐- একদিন!!!পূরণ!!!হবেই!!! ✿᭄\n\n✿᭄࿐ইনশাআল্লাহ..\n\n╰•┄┅═══❁❁═══┅┄•╯\n :   ",
+   var hi = ["•—»✨「    ｣ ✨«—•\n༆-✿Prefix Event ༊࿐\n╭•┄┅═══❁❁═══┅┄•╮\n\nn᭄࿐-ইচ্ছে!!!গুলো!!!যদি!!!পবিত্র!!হয়!✿᭄\n\n✿᭄তাহলে!!!স্বপ্ন!!! গুলো..\n\n✿᭄ ࿐- একদিন!!!পূরণ!!!হবেই!!! ✿᭄\n\n✿᭄࿐ইনশাআল্লাহ..\n\n╰•┄┅═══❁❁═══┅┄•╯\n :   ",
 " •—»✨「    」✨«—•\n ༆-✿Prefix Event ༊࿐ \n╭•┄┅═══❁❁═══┅┄•╮\n\n_____✵♡︎\n\n___কি  হবে  এত  মানুষের প্রিয় হয়ে__\n\n__যদি আল্লাহ   প্রিয় না হতে পারি__\n\n_____✵♡︎\n\n╰•┄┅═══❁❁═══┅┄•╯\n\n :   ",
 "•—»✨「    」  ✨«—•\n ༆-✿Prefix Event ༊࿐\n╭•┄┅═══❁❁═══┅┄•╮\n\n┏╮/╱╰️❥☆••\n╱/╰┛࿐চিরস্থায়ী কি \nজানেন͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌༒࿐͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌\n༄আপনার সুন্দর ব্যবহার!!!!࿐͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌\n\n࿐͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌͌যেটা মৃত্যুর পরও সবার সৃতিতে থাকবে❁ཻ͜͡ღ᭄\n\n╰•┄┅═══❁❁═══┅┄•╯\n\n :   ",
 "•—»✨「    」  ✨«—•\n  ༆-✿Prefix Event ༊࿐\n╭•┄┅═══❁❁═══┅┄•╮\n\n\n\n-মক্কা তুমি ধন্য.༏༏࿐\n\n-তোমার বুকে হয়েছিলো বিশ্ব নবীর জন্ম.༏༏࿐\n\n\n\n╰•┄┅═══❁❁═══┅┄•╯\n\n :   ",
@@ -51,6 +50,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.postimg.cc/WpC2XD8p/received-659559285696847.jpg",
 "https://i.postimg.cc/4NcXMJ26/received-819496329472643.jpg",
 ];
-   var callback = () => api.sendMessage({body:` ${know} `,attachment: fs.createReadStream(__dirname + "/cache55.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache55.jpg"));	
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache55.jpg")).on("close",() => callback());
+   var callback = () => api.sendMessage({body:` ${know} `,attachment: fs.createReadStream(__dirname + "/CYBER.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/CYBER.jpg"));	
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/CYBER.jpg")).on("close",() => callback());
    };
