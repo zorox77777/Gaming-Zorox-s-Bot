@@ -4,9 +4,10 @@ const axios = require('axios');
 module.exports.config = {
   name: "sura",
   version: "1.6",
-  credits: "Islamick Cyber Chat",
-  hasPermssion:0,
-  commandCategory: "sura",
+  credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
+  prefix:true,
+ Permssion:0,
+  category: "sura",
   description:"playing sura",
   usages:"[command name]"
 };
@@ -35,6 +36,36 @@ module.exports.run = async ({ api, event }) => {
   }
 };
 
+module.exports.handleReply = async ({ api, event, handleReply }) => {
+  const { author, data } = handleReply;
+  if (event.senderID != author) return;
+
+  const choice = parseInt(event.body) - 1;
+  const keys = Object.keys(data);
+
+  if (choice >= 0 && choice < keys.length) {
+    const selectedSurah = keys[choice];
+    const selectedInfo = data[selectedSurah];
+    const selectedUrl = selectedInfo.url;
+    const title = selectedInfo.title;
+
+    try {
+      const audioData = (await axios.get(selectedUrl, { responseType: "arraybuffer" })).data;
+      const path = __dirname + "/cache/dipto.mp3";
+      fs.writeFileSync(path, Buffer.from(audioData, "utf-8"));
+
+      api.sendMessage({
+        body: `sura ${selectedSurah} 🖤🎧 note: ${title}`,
+        attachment: fs.createReadStream(path)
+      }, event.threadID, () => fs.unlinkSync(path), event.messageID);
+    } catch (e) {
+      api.sendMessage(`Error: Unable to play ${selectedSurah}.`, event.threadID, event.messageID);
+      console.log(e);
+    }
+  } else {
+    api.sendMessage('Invalid choice. Please try again.', event.threadID, event.messageID);
+  }
+};
 module.exports.handleReply = async ({ api, event, handleReply }) => {
   const { author, data } = handleReply;
   if (event.senderID != author) return;
