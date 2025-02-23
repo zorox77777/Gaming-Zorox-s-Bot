@@ -1,5 +1,4 @@
 /**
-* @author nazrul
 * @warn Do not edit code or edit credits
 */
 
@@ -7,7 +6,7 @@ module.exports.config = {
 	name: "adduser",
 	version: "2.4.3",
 	hasPermssion: 0,
-	credits: "nazrul",
+	credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
 	description: "Add user to the group by link or id",
 	commandCategory: "group",
 	usages: "[args]",
@@ -24,13 +23,13 @@ module.exports.run = async function ({ api, event, args }) {
 	const out = msg => api.sendMessage(msg, threadID, messageID);
 	var { participantIDs, approvalMode, adminIDs } = await api.getThreadInfo(threadID);
 	var participantIDs = participantIDs.map(e => parseInt(e));
-	if (!args[0]) return out("আরে পাগলা 😂😂 \n তুমি কার id  এড করতে চাও \n তার  id/link প্রয়েজন. \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖----");
+	if (!args[0]) return out("Add by membar give me membar fb uid");
 	if (!isNaN(args[0])) return adduser(args[0], undefined);
 	else {
 		try {
 			var [id, name, fail] = await getUID(args[0], api);
 			if (fail == true && id != null) return out(id);
-			else if (fail == true && id == null) return out(" সরি জিঁলাঁপিঁ বস এমন কোন আইডি খুজে পেলাম  না 😔😔 \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖----.")
+			else if (fail == true && id == null) return out("Sorry I Don't track your account..!⚠")
 			else {
 				await adduser(id, name || "Facebook user");
 			}
@@ -41,17 +40,17 @@ module.exports.run = async function ({ api, event, args }) {
 
 	async function adduser(id, name) {
 		id = parseInt(id);
-		if (participantIDs.includes(id)) return out(`${name ? name : "Member"} জিঁলাঁপিঁ বস  মেমবার টা গ্রুপে এ্যাড রহিছে \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖----.`);
+		if (participantIDs.includes(id)) return out(`${name ? name : "Member"} This members already add to groupr...!🤗`);
 		else {
 			var admins = adminIDs.map(e => parseInt(e.id));
 			try {
 				await api.addUserToGroup(id, threadID);
 			}
 			catch {
-				return out(`জিঁলাঁপিঁ বস ${name ? name : "user"} এ্যাড করতে পারলাম না 😔😔 \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖---- .`);
+				return out(`Opps ${name ? name : "user"} i I am successfully adding this member sorry...!⚠`);
 			}
-			if (approvalMode === true && !admins.includes(botID)) return out(`Add ${name ? name : "member"} জিঁলাঁপিঁ বস approved লিষ্টে জমা  দিয়েছি \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖----!`);
-			else return out(`জিঁলাঁপিঁ বস ${name ? name : "member"} গ্রুপে এ্যাড করতে সফল্য \n✢━━━━━━━━━━━━━━━✢\n ----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖----!`)
+			if (approvalMode === true && !admins.includes(botID)) return out(`Add ${name ? name : "member"} Panding By approved list..!⌛`);
+			else return out(`🌺✨ ${name ? name : "member"} successfully add this members in our group..!😊`)
 		}
 	}
     }
