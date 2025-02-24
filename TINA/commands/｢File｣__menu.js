@@ -28,7 +28,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
       msg += `\nᴜsɪɴɢ: ${(command_config.usages) ? command_config.usages : ""}`;
       msg += `\nᴡᴀɪᴛɪɴɢ ᴛɪᴍᴇ: ${command_config.cooldowns || 5}s`;
       msg += `\nᴘᴏᴡᴇʀ: ${(command_config.hasPermssion == 0) ? "User" : (command_config.hasPermssion == 1) ? "Group administrator" : "Bot admin"}`;
-      msg += `\n⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆`
+      msg += `\n⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆`
       msg += `\n\n Module code by ${command_config.credits} `;
     } else {
       check = true;
@@ -81,7 +81,7 @@ module.exports.run = async function({ api, event, args }) {
         fs.writeFileSync(path, Buffer.from(dowloadIMG, "utf-8") );
         imgP.push(fs.createReadStream(path))
   const command = commands.values();
-  var group = [], msg = "╭•┄┅════❁🌺❁════┅┄•╮\n  আসসালামু আলাইকুম-!!🖤💫\n╰•┄┅════❁🌺❁════┅┄•╯\n\n𝐈𝐒𝐋𝐀𝐌𝐈𝐂𝐊 𝐂𝐇𝐀𝐓 𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓\n⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆\n";
+  var group = [], msg = "╭•┄┅══❁🌺❁══┅┄•╮\n  আসসালামু আলাইকুম-!!🖤💫\n╰•┄┅═══❁🌺❁═══┅┄•╯\n\n𝐈𝐒𝐋𝐀𝐌𝐈𝐂𝐊 𝐂𝐇𝐀𝐓 𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓\n⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆\n";
   let check = true, page_num_input = "";
   let bonus = 0;
 
