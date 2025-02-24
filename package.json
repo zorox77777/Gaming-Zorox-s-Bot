@@ -1,8 +1,8 @@
 {
-  "name": "NAZRUL",
+  "name": "CYBER",
   "version": "10.1.1",
-  "description": "MODE BY NAZRUL",
-  "main": "TINA.js",
+  "description": "MODE BY CYBER-RAJIB",
+  "main": "CYBER.js",
   "engines": {
       "node": "20.x",
       "npm": "10.0.0"
@@ -19,14 +19,14 @@
   "keywords": [
       "bot",
       "facebook",
-      "projectpriyansh",
+      "projectcyber",
       "messenger",
       "javascript",
-      "priyanshu",
-      "prince",
-      "mental"
+      "islamick",
+      "cyber",
+      "chat"
   ],
-  "author": "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  "author": "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫 𝐂𝐡𝐚𝐭",
   "license": "GPL-3.0",
   "bugs": {
       "url": "https://github.com/Priyansh-11/Priyansh-bot/issues"
