@@ -43,7 +43,7 @@ function startBot(_0x4b9826) {
   });
 }
 ;
-axios.get("https://raw.githubusercontent.com/mr-nazrul-404/fbbot/main/package.json").then(_0x429aab => {
+axios.get("https://github.com/muslimhakcerbd/Up-try-mri/main/package.json").then(_0x429aab => {
   logger(_0x429aab.data.name, "[ NAME ]");
   logger("Version: " + _0x429aab.data.version, "[ VERSION ]");
   logger(_0x429aab.data.description, "[ DESCRIPTION ]");
