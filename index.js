@@ -24,7 +24,7 @@ function startBot(_0x4b9826) {
   if (_0x4b9826) {
     logger(_0x4b9826, "[ STARTING ]");
   }
-  const _0x18d2ca = spawn("node", ["--trace-warnings", "--async-stack-traces", "CYBER.js"], {
+  const _0x18d2ca = spawn("node", ["--trace-warnings", "--async-stack-traces", "cyber.js"], {
     'cwd': __dirname,
     'stdio': "inherit",
     'shell': true
