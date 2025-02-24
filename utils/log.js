@@ -27,7 +27,7 @@ module.exports.loader = (_0x4705f2, _0x10a189) => {
       console.log(chalk.bold.hex(randomColor()).bold(" CYBER ERROR•—»✨ ") + chalk.bold.hex("#8B8878").bold(_0x4705f2) + chalk.bold.hex("FF00DD")(''));
       break;
     case "error":
-      console.log(chalk.bold.hex(randomColor()).bold(" CYBER ERROR •—»✨ ") + _0x4705f2 + chalk.bold.hex("5EFF00")(''));
+      console.log(chalk.bold.hex(randomColor()).bold(" CYBER ERROR•—»✨ ") + _0x4705f2 + chalk.bold.hex("5EFF00")(''));
       break;
     default:
       console.log(chalk.bold.hex(randomColor()).bold("CYBER•—»✨ ") + chalk.bold.hex(randomColor()).bold(_0x4705f2) + chalk.bold.hex("FFF0000")(''));
