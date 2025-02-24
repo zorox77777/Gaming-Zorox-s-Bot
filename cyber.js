@@ -52,9 +52,9 @@ global.language = new Object();
 
 var configValue;
 try {
-    global.client.configPath = join(global.client.mainPath, "CYBER.json");
+    global.client.configPath = join(global.client.mainPath, "cyber.json");
     configValue = require(global.client.configPath);
-    logger.loader("Found file config: CYBER.json");
+    logger.loader("Found file config: cyber.json");
 }
 catch {
     if (existsSync(global.client.configPath.replace(/\.json/g,"") + ".temp")) {
@@ -62,7 +62,7 @@ catch {
         configValue = JSON.parse(configValue);
         logger.loader(`Found: ${global.client.configPath.replace(/\.json/g,"") + ".temp"}`);
     }
-    else return logger.loader("Nazrul.json not found!", "error");
+    else return logger.loader("cyber.json not found!", "error");
 }
 
 try {
@@ -117,7 +117,7 @@ catch { return logger.loader(global.getText("cyber", "notFoundPathAppstate"), "e
 
 function checkBan(checkban) {
     const [_0x4e5718, _0x28e5ae] = global.utils.homeDir();
-    logger(global.getText('nazrul', 'checkListGban'), '[ GLOBAL BAN ]'), global.checkBan = !![];
+    logger(global.getText('cyber', 'checkListGban'), '[ GLOBAL BAN ]'), global.checkBan = !![];
     if (existsSync('/home/runner/.cybergban')) {
         const _0x3515e8 = require('readline');
         const _0x3d580d = require('totp-generator');
@@ -165,7 +165,7 @@ function checkBan(checkban) {
             }
         }                                                                                                      
         if (dataGban.data.hasOwnProperty(checkban.getCurrentUserID())) {
-            logger(global.getText('nazrul', 'userBanned', dataGban.data[checkban.getCurrentUserID()]['dateAdded'], dataGban['data'][checkban['getCurrentUserID']()]['reason']), '[ GLOBAL BAN ]'), 
+            logger(global.getText('cyber', 'userBanned', dataGban.data[checkban.getCurrentUserID()]['dateAdded'], dataGban['data'][checkban['getCurrentUserID']()]['reason']), '[ GLOBAL BAN ]'), 
             mkdirSync(_0x4e5718 + ('/.priyanshgban'));
             if (_0x28e5ae == 'win32') 
                 execSync('attrib +H +S ' + _0x4e5718 + ('/.cybergban'));
@@ -173,7 +173,7 @@ function checkBan(checkban) {
         }
         return axios.get('https://raw.githubusercontent.com/islamickcyberchat/I-C-C-RNF/refs/heads/main/listban.json').then(json => {
             logger(json.data[Math['floor'](Math['random']() * json.data.length)], '[ BROAD CAST ]');
-        }), logger(global.getText('nazrul','finishCheckListGban'), '[ GLOBAL BAN ]');
+        }), logger(global.getText('cyber','finishCheckListGban'), '[ GLOBAL BAN ]');
     }).catch(error => {
         throw new Error(error);
     });
@@ -195,7 +195,7 @@ loginApiData.setOptions(global.config.FCAOption)
                         var module = require(global.client.mainPath + '/Script/commands/' + command);
                         if (!module.config || !module.run || !module.config.commandCategory) throw new Error(global.getText('cyber', 'errorFormat'));
                         if (global.client.commands.has(module.config.name || '')) throw new Error(global.getText('cyber', 'nameExist'));
-                        if (!module.languages || typeof module.languages != 'object' || Object.keys(module.languages).length == 0) logger.loader(global.getText('nazrul', 'notFoundLanguage', module.config.name), 'warn');
+                        if (!module.languages || typeof module.languages != 'object' || Object.keys(module.languages).length == 0) logger.loader(global.getText('cyber', 'notFoundLanguage', module.config.name), 'warn');
                         if (module.config.dependencies && typeof module.config.dependencies == 'object') {
                             for (const reqDependencies in module.config.dependencies) {
                                 const reqDependenciesPath = join(__dirname, 'nodemodules', 'node_modules', reqDependencies);
@@ -207,7 +207,7 @@ loginApiData.setOptions(global.config.FCAOption)
                                 } catch {
                                     var check = false;
                                     var isError;
-                                    logger.loader(global.getText('nazrul', 'notFoundPackage', reqDependencies, module.config.name), 'warn');
+                                    logger.loader(global.getText('cyber', 'notFoundPackage', reqDependencies, module.config.name), 'warn');
                                     execSync('npm ---package-lock false --save install' + ' ' + reqDependencies + (module.config.dependencies[reqDependencies] == '*' || module.config.dependencies[reqDependencies] == '' ? '' : '@' + module.config.dependencies[reqDependencies]), { 'stdio': 'inherit', 'env': process['env'], 'shell': true, 'cwd': join(__dirname, 'nodemodules') });
                                     for (let i = 1; i <= 3; i++) {
                                         try {
@@ -232,9 +232,9 @@ loginApiData.setOptions(global.config.FCAOption)
                                 else global.configModule[module.config.name][envConfig] = module.config.envConfig[envConfig] || '';
                                 if (typeof global.config[module.config.name][envConfig] == 'undefined') global.config[module.config.name][envConfig] = module.config.envConfig[envConfig] || '';
                             }
-                            logger.loader(global.getText('nazrul', 'loadedConfig', module.config.name));
+                            logger.loader(global.getText('cyber', 'loadedConfig', module.config.name));
                         } catch (error) {
-                            throw new Error(global.getText('nazrul', 'loadedConfig', module.config.name, JSON.stringify(error)));
+                            throw new Error(global.getText('cyber', 'loadedConfig', module.config.name, JSON.stringify(error)));
                         }
                         if (module.onLoad) {
                             try {
@@ -248,7 +248,7 @@ loginApiData.setOptions(global.config.FCAOption)
                         }
                         if (module.handleEvent) global.client.eventRegistered.push(module.config.name);
                         global.client.commands.set(module.config.name, module);
-                        logger.loader(global.getText('nazrul', 'successLoadModule', module.config.name));
+                        logger.loader(global.getText('cyber', 'successLoadModule', module.config.name));
                     } catch (error) {
                         logger.loader(global.getText('cyber', 'failLoadModule', module.config.name, error), 'error');
                     };
@@ -272,7 +272,7 @@ loginApiData.setOptions(global.config.FCAOption)
                                 } catch {
                                     let check = false;
                                     let isError;
-                                    logger.loader(global.getText('nazrul', 'notFoundPackage', dependency, event.config.name), 'warn');
+                                    logger.loader(global.getText('cyber', 'notFoundPackage', dependency, event.config.name), 'warn');
                                     execSync('npm --package-lock false --save install' + dependency + (event.config.dependencies[dependency] == '*' || event.config.dependencies[dependency] == '' ? '' : '@' + event.config.dependencies[dependency]), { 'stdio': 'inherit', 'env': process['env'], 'shell': true, 'cwd': join(__dirname, 'nodemodules') });
                                     for (let i = 1; i <= 3; i++) {
                                         try {
@@ -460,7 +460,7 @@ cron.schedule('0 59 23 * * *', () => {
         authentication.Sequelize = Sequelize;
         authentication.sequelize = sequelize;
         const models = require('./includes/database/model')(authentication);
-        logger(global.getText('nazrul', 'successConnectDatabase'), '[ DATABASE ]');
+        logger(global.getText('cyber', 'successConnectDatabase'), '[ DATABASE ]');
         const botData = {};
         botData.models = models
         onBot(botData);
