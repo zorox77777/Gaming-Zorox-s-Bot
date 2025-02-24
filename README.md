@@ -2,7 +2,7 @@
 
 ###  🤍✨𝐂 𝐘 𝐁 𝐄 𝐑-𝐑 𝐀 𝐉 𝐈 𝐁✨🤍
 
-❖ **`A WhatsApp Multi Device Bot To Take Your WhatsApp To Another Level !`** ❖
+❖ **`A Massanger  Multi Device Bot To Take Your Massanger To Another Level !`** ❖
 
 ----------
 ## CLICK <a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
