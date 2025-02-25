@@ -7,12 +7,12 @@ module.exports = function({ api, models }) {
 	const fs = require("fs");
 	const moment = require('moment-timezone');
 	const axios = require("axios");
-  var day = moment.tz("Asia/Kolkata").day();
+  var day = moment.tz("Asia/Dhaka").day();
   
   
   const checkttDataPath = __dirname + '/../Script/commands/checktt/';
   setInterval(async() => {
-    const day_now = moment.tz("Asia/Kolkata").day();
+    const day_now = moment.tz("Asia/Dhaka").day();
     if (day != day_now) {
       day = day_now;
       const checkttData = fs.readdirSync(checkttDataPath);
@@ -228,7 +228,7 @@ module.exports = function({ api, models }) {
 			try {
 				var all = (await Threads.getInfo(el["TID"])).participantIDs;
 			    all.splice(all.indexOf(api.getCurrentUserID()), 1);
-				var body = el.REASON || "MỌI NGƯỜI ƠI", mentions = [], index = 0;
+				var body = el.REASON || "Everyone", mentions = [], index = 0;
 				
 			    for (let i = 0; i < all.length; i++) {
 				    if (i == body.length) body += " ‍ ";
