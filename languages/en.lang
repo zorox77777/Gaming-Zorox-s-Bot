@@ -3,35 +3,35 @@
 # Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
 # Thanks to https://www.facebook.com/duong.than.net for translate to English!
 
-# TINA.js 
+# cyber.js 
 
-nazrul.newVersionDetected=𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 %1, 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐢𝐬 %2. 
-nazrul.errorFormat=Malformed module!
-nazrul.nameExist=Module's name is similar to another module!
-nazrul.notFoundLanguage=Module %1 don't support your language
-nazrul.notFoundPackage=Can't find package %1 support for module %2, installing...
-nazrul.cantInstallPackage=Can't install package %1 for module %2, error: %3
-nazrul.loadedPackage=Installed whole package successfully for module %1
-nazrul.loadedConfig=Installed config successfully for module %1
-nazrul.cantLoadConfig=Can't install config of module %1, error: %2
-nazrul.cantOnload=Can't launch setup of module %1, error: %1
-nazrul.successLoadModule=Successfully installed module %1
-nazrul.failLoadModule=Can't install module %1, error: %2
-nazrul.finishLoadModule=Installed %1 module commands and %2 module events successfully 
-nazrul.foundPathAppstate=Nazrulstate successfully
-nazrul.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
-nazrul.checkListGban=Checking global ban list...
-nazrul.banDevice=Your device have been banned from Nazrul islam, please contact to facebook https://fb.me/ji.la.pi.6 to know more information or asking for unban key, if you already have unban key, please fill it below.
-nazrul.keyNotSameFormat=Wrong format, code must contain 6 number.
-nazrul.codeInputExpired=Your code is wrong or out of date.
-nazrul.unbanDeviceSuccess=Your device are unban now, please restart to use.
-nazrul.userBanned=You had been banned from Nazrul islam when %1 with reason: %2. Please contact to facebook https://fb.me/ji.la.pi.6 to have more information!
-nazrul.finishCheckListGban=Checked global ban list
+cyber.newVersionDetected=𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 %1, 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐢𝐬 %2. 
+cyber.errorFormat=Malformed module!
+cyber.nameExist=Module's name is similar to another module!
+cyber.notFoundLanguage=Module %1 don't support your language
+cyber.notFoundPackage=Can't find package %1 support for module %2, installing...
+cyber.cantInstallPackage=Can't install package %1 for module %2, error: %3
+cyber.loadedPackage=Installed whole package successfully for module %1
+cyber.loadedConfig=Installed config successfully for module %1
+cyber.cantLoadConfig=Can't install config of module %1, error: %2
+cyber.cantOnload=Can't launch setup of module %1, error: %1
+cyber.successLoadModule=Successfully installed module %1
+cyber.failLoadModule=Can't install module %1, error: %2
+cyber.finishLoadModule=Installed %1 module commands and %2 module events successfully 
+cyber.foundPathAppstate=Nazrulstate successfully
+cyber.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
+cyber.checkListGban=Checking global ban list...
+cyber.banDevice=Your device have been banned from Nazrul islam, please contact to facebook https://fb.me/ji.la.pi.6 to know more information or asking for unban key, if you already have unban key, please fill it below.
+cyber.keyNotSameFormat=Wrong format, code must contain 6 number.
+cyber.codeInputExpired=Your code is wrong or out of date.
+cyber.unbanDeviceSuccess=Your device are unban now, please restart to use.
+cyber.userBanned=You had been banned from Nazrul islam when %1 with reason: %2. Please contact to facebook https://fb.me/ji.la.pi.6 to have more information!
+cyber.finishCheckListGban=Checked global ban list
 nazrul.handleListenError=handleListene has occurred some unexpected errorr, error : %1
-nazrul.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
-nazrul.refreshListen=Refreshed handleListener...
-nazrul.successConnectDatabase=Connected to database successfully!
-nazrul.failConnectDatabase=Failed to connect to database, error: %1
+cyber.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
+cyber.refreshListen=Refreshed handleListener...
+cyber.successConnectDatabase=Connected to database successfully!
+cyber.failConnectDatabase=Failed to connect to database, error: %1
 
 # includes/listen.js
 
