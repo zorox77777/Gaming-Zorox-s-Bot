@@ -48,18 +48,4 @@ module.exports.run = async function({ api, event, args }) {
             var { data, error } = await simsimi(args.join(" "), api, event);
             return !0 == data ? void 0 : !1 == data.answer ? body(data.error) : body(data.answer);
     }
-};    }
-}
-module.exports.run = async function({ api, event, args }) {
-    const { threadID, messageID } = event, body = (args) => api.sendMessage(args, threadID, messageID);
-    if (0 == args.length) return body("[ 𝐒𝐈𝐌 ] - You haven't entered a message yet.");
-    switch (args[0]) {
-        case "on":
-            return global.manhG.simsimi.has(threadID) ? body("[ 𝐒𝐈𝐌 ] - What happened after 2 times?") : (global.manhG.simsimi.set(threadID, messageID), body("[ 𝐒𝐈𝐌 ] - Make it successful."));
-        case "off":
-            return global.manhG.simsimi.has(threadID) ? (global.manhG.simsimi.delete(threadID), body("[ 𝐒𝐈𝐌 ] - easy success.")) : body("[ 𝐒𝐈𝐌 ] - Tao is starting to turn off.");
-        default:
-            var { data, error } = await simsimi(args.join(" "), api, event);
-            return !0 == data ? void 0 : !1 == data.answer ? body(data.error) : body(data.answer);
-    }
 };
