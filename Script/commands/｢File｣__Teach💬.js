@@ -28,7 +28,7 @@ module.exports.config = {
       const ans = msg[1].trim();
 
 
-      const img = `https://all-api-ius8.onrender.com/sim?type=teach&ask=${ask}&ans=${ans}`
+      const img = `https://sim-api-by-priyansh.glitch.me/sim?type=teach&ask=${ask}&ans=${ans}`
 
       try {
         const response = await axios.get(img);
