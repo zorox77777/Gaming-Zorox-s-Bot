@@ -5,7 +5,7 @@
 ❖ **`A Massanger  Multi Device Bot To Take Your Massanger To Another Level !`** ❖
 
 ----------
-## CLICK <a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-MIRAI-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
+## CLICK <a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
 
 
 <img src='https://i.postimg.cc/hPQGnNWd/CYBER.jpg'/>
@@ -13,18 +13,18 @@
 -------
 
  <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`C Y B E R+R A J I B+W.P+BOT`" alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`C Y B E R+R A J I B+M.G+BOT`" alt="">
 
 <br>
 
 --------
 
 <p align="center">
-<a href="https://github.com/mrfrank-ofc/"><img title="Followers" src="https://img.shields.io/github/followers/mrfrank-ofc?color=blue&style=flat-square"></a>
-<a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/islamickcyber-chat/ISLAMICK-CYBER-WHAT-S-UP-BOT?color=blue&style=flat-square"></a>
-<a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/network/members"><img title="Forks" src="https://img.shields.io/github/forks/islamickcyber-chat/ISLAMICK-CYBER-WHAT-S-UP-BOT?color=blue&style=flat-square"></a>
-<a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/"><img title="Size" src="https://img.shields.io/github/repo-size/islamickcyber-chat/ISLAMICK-CYBER-WHAT-S-UP-BOT?style=flat-square&color=blue"></a>
-<a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/islamickcyberchat404/"><img title="Followers" src="https://img.shields.io/github/followers/islamickcyberchat404?color=blue&style=flat-square"></a>
+<a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/?color=blue&style=flat-square"></a>
+<a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/network/members"><img title="Forks" src="https://img.shields.io/github/forks/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT?color=blue&style=flat-square"></a>
+<a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/"><img title="Size" src="https://img.shields.io/github/repo-size/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT?style=flat-square&color=blue"></a>
+<a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBECYBER-RAJ/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
 </p>
@@ -43,59 +43,44 @@ name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    # Step to check out the repository code
+    - uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
+    # Step to set up the specified Node.js version
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
 
+    # Step to install dependencies
     - name: Install dependencies
       run: npm install
 
-    - name: Start application
+    # Step to run the bot with the correct port
+    - name: Start the bot
+      env:
+        PORT: 8080
       run: npm start
 ```
 
-[![FORK CYBER RAJIB](https://img.shields.io/badge/FORK%20-CYBER%20RAJIB%20V4-white)](https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/fork)
-
-### <br>    ❖ SESSION_ID ❖
-
-
-`🚀 IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:+8801xxxxxx THEN YOU CAN GET YOUR SESSION_ID 🚀`
-
-----------
-## SESSION ONE
-<p align="center">
-<a href="https://subzero-session-id.onrender.com"><img height= "35" title="Author" src="https://img.shields.io/badge/GET SESSION ID:-black?style=for-the-badge&logo=render"></a>
-<p/>
-
- ## SESSION TWO
-<p align="center">
-<a href="https://subzero-md-session-id-732a5ca058f0.herokuapp.com"><img height= "35" title="Author" src="https://img.shields.io/badge/GET SESSION ID:-black?style=for-the-badge&logo=heroku"></a>
-<p/>
---------
-
+[![FORK CYBER RAJIB](https://img.shields.io/badge/FORK%20-CYBER%20RAJIB%20V404-white)](https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/forks)
 
  
-🕋✨ `THIS BOT IS CREATED TO DOWNLOAD'S AND FIND VARIOUS TYPES THINGS QUICKLY **EXAMPLE** LOGO, PHOTO, STICKERS, VIDEOS, MOVIES, ADULT, AND MANY MORE FEATURES BY USING THIS BOT™ THIS BOT IS CREATED TO USING` 🌸 **[CYBER-RAJIB](https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT)**
+🕋✨ `THIS BOT IS CREATED TO DOWNLOAD'S AND FIND VARIOUS TYPES THINGS QUICKLY **EXAMPLE** LOGO, PHOTO, STICKERS, VIDEOS, MOVIES, ADULT, AND MANY MORE FEATURES BY USING THIS BOT™ THIS BOT IS CREATED TO USING` 🌸 **[CYBER-RAJIB](https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT)**
 
 ------------------
 
@@ -106,20 +91,20 @@ jobs:
 -------
 
 <p align="center">
-  <a href="https://wa.me/+8801859551262?text=*ʜɪɪ+CYBER-RAJIB+ɪ+ɴᴇᴇᴅ+ʜᴇʟᴘ!.+ʀᴇᴘᴏ!!*" target="_blank">
+  <a href="https://wa.me/+8801859551262?text=*ᴀssᴀʟᴀᴍᴜ ᴀʟᴀɪᴋᴜᴍ+ʀᴀᴊɪʙ+ɪ+ɴᴇᴇᴅ+ʜᴇʟᴘ!.+ʙʀᴇᴀᴛʜᴇʀ!!*" target="_blank">
     <img alt="whatsapp" src="https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 -----------    
 
-`🚀 IF YOU WANT MORE ABOUT CYBER-RAJIBWHATSAPP BOT :-NEW UPDATED NEW CMDS SO JOIN OUR WHATSAPP CHANNEL FOR MORE INFORMATION CLICK THIS RED BUTTON 🔳 AND JOIN THE GROUP 🚀`
+`🚀 IF YOU WANT MORE ABOUT ISLAMICK-CYBER-MIRAI-BOT :NEW UPDATED NEW CMDS SO JOIN OUR MASSANGER GROUP FOR MORE INFORMATION CLICK THIS RED BUTTON 🔳 AND JOIN THE GROUP 🚀`
 
 ---------
 
-<a href="https://chat.whatsapp.com/ILPujzXlPw34VIebncoVS1"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ᴡʜᴀᴛsᴀᴘᴘ%20ᴄʜᴀɴɴᴇʟ-red" alt="🔰 ᴊᴏɪɴ ᴍʏ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
+<a href="https://m.me/j/AbZEOcdMGQYprT74/"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ᴍᴀssᴀɴ%20ɢʀᴏᴜᴘ-red" alt="🔰 ᴍᴀssᴀɴ ɢʀᴏᴜᴘ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
 
 -----------
 
-`🚀 IF YOU WANT MORE ABOUT CYBER-RAJIB WHATSAPP BOT :-NEW UPDATED NEW CMDS SO SUBSCRIBE OUR YOUTUBE CHANNEL FOR MORE INFORMATION CLICK THIS BLUE BUTTON 🔳 AND JOIN THE YOUTUBE CHANNEL 🚀`
+`🚀 IF YOU WANT MORE ABOUT ISLAMICK CYBER CHAT BOT :-NEW UPDATED NEW CMDS SO SUBSCRIBE OUR YOUTUBE CHANNEL FOR MORE INFORMATION CLICK THIS BLUE BUTTON 🔳 AND JOIN THE YOUTUBE CHANNEL 🚀`
 
 ----------
 ## CREATE TALDROVE ACCOUNT
@@ -136,37 +121,37 @@ jobs:
  
 ### <br>   ❖ DEPLOY_HEROKU ❖
 
-`🚀 IF YOU WANT TO DEPLOY CYBER-RAJIB BOT ON HEROKU SO FIRST GET YOUR SESSION_ID THEN CLICK THIS BLUE BUTTON [DEPLOY TO HEROKU] THEN YOU CAN ENJOY THIS BOT 🚀`
+`🚀 IF YOU WANT TO DEPLOY ISLAMICK CYBER CHAT MIRAI BOT ON HEROKU SO FIRST GET  THIS BLUE BUTTON [DEPLOY TO HEROKU] THEN YOU CAN ENJOY THIS BOT 🚀`
 
 ------------
  
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new-app?template=https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new-app?template=https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT)
 
 ----------
 
 ### <br>    ❖ DEPLOY_REPLIT ❖
 
-`🚀 IF U HAVE YOUR REPLIT ACCOUNT SO YOU CAN EASY DEPLOY CYBER-RAJIB ON REPLIT CLICK BLACK BUTTON [DEPLOY TO REPLIT] AND FIND CONFIG.JSON FILE THEN PASTE YOUR SESSION AND MONGODB KEY THEN RUN CODE AND ENJOY BOT 🚀`
+`🚀 IF U HAVE YOUR REPLIT ACCOUNT SO YOU CAN EASY DEPLOY ISLAMICK CYBER CHAT BOT ON REPLIT CLICK BLACK BUTTON [DEPLOY TO REPLIT] AND FIND CONFIG.JSON FILE THEN MONGODB KEY THEN RUN CODE AND ENJOY BOT 🚀`
 
 -------------
 
-<p align="left"><a href="https://repl.it/https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT"> <img src='https://img.shields.io/badge/-REPLIT-orange?style=for-the-badge&logo=replit&logoColor=white'/></a>
+<p align="left"><a href="https://repl.it/https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT"> <img src='https://img.shields.io/badge/-REPLIT-orange?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
 --------------
 
 ### <br>   ❖ DEPLOY_KOYEB ❖
 
-`🚀 IF YOU HAVE YOUR KOYEB ACCOUNT SO YOU CAN DEPLOY CYBER-RAJIB ON KOYEB WITH EASY SETUP NOTE:-MAYBE SOME PROBLEM TO DEPLOY ON KOYEB I ILL FIX SOON 🚀`
+`🚀 IF YOU HAVE YOUR KOYEB ACCOUNT SO YOU CAN DEPLOY ISLAMICK CYBER CHAT BOT ON KOYEB WITH EASY SETUP 🚀`
 
 ---------
 
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT&branch=main&name=CYBER-RAJIB&builder=dockerfile&env[OWNER_NUMBER]=263719647303%3B%E2%9D%A3%EF%B8%8F&env[MODE]=public&env[PREFIX]=&env[antidelete]=false&env[ANTI_LINK]=false&env[AUTO_STICKER]=false&env[AUTO_VOICE]=false&env[AUTO_REPLY]=false&env[STATUSLIKES]=true&env[ALIVE_MSG]=CYBER+IS+ONLINE&env[BOT_NAME]=CYBER-RAJIB&env[HEART_REACT]=true%F0%9F%8E%97%EF%B8%8F%E2%9D%A3%EF%B8%8F&env[ANTI_BAD]=false&env[AUTO_READ_STATUS]=false&env[AutoReaction]=false&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-KOYEB-blue?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT&branch=main&name=ISLAMICK-CYBER-MIRAI-BOT&builder=dockerfile&env[OWNER_NUMBER]=01859551262%3B%E2%9D%A3%EF%B8%8F&env[MODE]=public&env[PREFIX]=&env[antidelete]=false&env[ANTI_LINK]=false&env[AUTO_STICKER]=false&env[AUTO_VOICE]=false&env[AUTO_REPLY]=false&env[STATUSLIKES]=true&env[ALIVE_MSG]=CYBER+IS+ONLINE&env[BOT_NAME]=ISLAMICK CYBER CHAT &env[HEART_REACT]=true%F0%9F%8E%97%EF%B8%8F%E2%9D%A3%EF%B8%8F&env[ANTI_BAD]=false&env[AUTO_READ_STATUS]=false&env[AutoReaction]=false&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-KOYEB-blue?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
 ------------
 
 ### <br>  ❖ DEPLOY_RAILWAY ❖
 
-`🚀 IF YOU HAVE YOUR RAILWAY ACCOUNT SO YOU CAN DEPLOY SUBZERO-MD ON RAILWAY WITH EASY SETUP NOTE:-MAYBE SOME PROBLEM TO DEPLOY ON KOYEB I ILL FIX SOON 🚀`
+`🚀 IF YOU HAVE YOUR RAILWAY ACCOUNT SO YOU CAN DEPLOY ISLAMICK CYBER CHAT  ON RAILWAY WITH EASY SETUP NOTE:-MAYBE SOME PROBLEM TO DEPLOY ON KOYEB I ILL FIX SOON 🚀`
 
 --------
 
@@ -194,7 +179,7 @@ jobs:
 <a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RENDER-h?color=maroon&style=for-the-badge&logo=render'/></a></p>
 
 -----------
-`🚀 HOW TO DEPLOY CYBER-RAJIB ON WORKFLOWS FREE GITHUB WATCH VIDEO 🚀`
+`🚀 HOW TO DEPLOY ISLAMICK CYBER CHAT BOT ON WORKFLOWS FREE GITHUB WATCH VIDEO 🚀`
 
 -------------
 
@@ -205,7 +190,7 @@ jobs:
 
 -------------
 
-Thanks For Using CYBER-RAJIB
+Thanks For Using Islamick Cyber Chat 
 
-> Release Date : 1/1/2025 at 00.00
+> Release Date : 27/2/2025 at 08.00 
 Dᴏɴ’ᴛ Fᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ⭐️ ᴀꜰᴛᴇʀ ꜰᴏʀᴋ
