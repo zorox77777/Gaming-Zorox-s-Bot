@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event }) => {
   try {
-    const data = JSON.parse(fs.readFileSync(__dirname + '/cyber/Cyber.json', 'utf8'));
+    const data = JSON.parse(fs.readFileSync(__dirname + '/CYBER/Cyber.json', 'utf8'));
 
     let optionMessage = "Please select a Surah:\n";
     const keys = Object.keys(data);
@@ -50,7 +50,7 @@ module.exports.handleReply = async ({ api, event, handleReply }) => {
 
     try {
       const audioData = (await axios.get(selectedUrl, { responseType: "arraybuffer" })).data;
-      const path = __dirname + "/cache/dipto.mp3";
+      const path = __dirname + "/CYBER/Rajib.mp3";
       fs.writeFileSync(path, Buffer.from(audioData, "utf-8"));
 
       api.sendMessage({
@@ -80,7 +80,7 @@ module.exports.handleReply = async ({ api, event, handleReply }) => {
 
     try {
       const audioData = (await axios.get(selectedUrl, { responseType: "arraybuffer" })).data;
-      const path = __dirname + "/cache/Cyber.mp3";
+      const path = __dirname + "/CYBER/Rajib.mp3";
       fs.writeFileSync(path, Buffer.from(audioData, "utf-8"));
 
       api.sendMessage({
