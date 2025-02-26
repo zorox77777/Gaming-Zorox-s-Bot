@@ -5,7 +5,7 @@
 ❖ **`A Massanger  Multi Device Bot To Take Your Massanger To Another Level !`** ❖
 
 ----------
-## CLICK <a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-WHAT-S-UP-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
+## CLICK <a href="https://github.com/islamickcyberchat/ISLAMICK-CYBER-MIRAI-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
 
 
 <img src='https://i.postimg.cc/hPQGnNWd/CYBER.jpg'/>
