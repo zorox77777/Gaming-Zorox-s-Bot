@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "sim",
+    name: "cyber",
     version: "4.3.7",
     hasPermssion: 0,
     credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
@@ -19,7 +19,7 @@ async function simsimi(a, b, c) {
         { APIKEY } = global.configModule.sim,
         g = (a) => encodeURIComponent(a);
     try {
-        var { data: j } = await axios({ url: `https://early-luelle-islamick-cyber-chat404-e77e3fdc.koyeb.app//sim?type=ask&ask=${g(a)}&apikey=PriyanshVip`, method: "GET" });
+        var { data: j } = await axios({ url: `https://sim-api-by-priyansh.glitch.me/sim?type=ask&ask=${g(a)}&apikey=PriyanshVip`, method: "GET" });
         return { error: !1, data: j }
     } catch (p) {
         return { error: !0, data: {} }
@@ -35,6 +35,20 @@ module.exports.handleEvent = async function({ api, event }) {
         var { data, error } = await simsimi(body, api, event);
         return !0 == error ? void 0 : !1 == data.answer ? g(data.error) : g(data.answer)
     }
+}
+module.exports.run = async function({ api, event, args }) {
+    const { threadID, messageID } = event, body = (args) => api.sendMessage(args, threadID, messageID);
+    if (0 == args.length) return body("[ 𝐒𝐈𝐌 ] -  jo bolna he o hindi me bolo muje bangla aty nehi ..!🐸.");
+    switch (args[0]) {
+        case "on":
+            return global.manhG.simsimi.has(threadID) ? body("[ 𝐂𝐲𝐛𝐞𝐫 ] - What happened after 2 times?") : (global.manhG.simsimi.set(threadID, messageID), body("[ 𝐂𝐲𝐛𝐞𝐫 ] - Make it successful."));
+        case "off":
+            return global.manhG.simsimi.has(threadID) ? (global.manhG.simsimi.delete(threadID), body("[ 𝐂𝐲𝐛𝐞𝐫 ] - easy success.")) : body("[ 𝐂𝐲𝐛𝐞𝐫 ] - Tao is starting to turn off.");
+        default:
+            var { data, error } = await simsimi(args.join(" "), api, event);
+            return !0 == data ? void 0 : !1 == data.answer ? body(data.error) : body(data.answer);
+    }
+};    }
 }
 module.exports.run = async function({ api, event, args }) {
     const { threadID, messageID } = event, body = (args) => api.sendMessage(args, threadID, messageID);
