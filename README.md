@@ -110,12 +110,8 @@ jobs:
 ## CREATE TALDROVE ACCOUNT
 <a href="https://host.talkdrove.com/auth/signup?ref=9535F15A"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20HOST.TALKDROVE%20FREE%20ACCOUNT%20HERE-blue" alt="hosttaldrove" width="300"></a>
 -----------
-
-## DEPLOY ON TALKDROVE
-
-<a href="https://host.talkdrove.com/share-bot/66"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20HOST.TALKDROVE%20FREE%20SUBZERO%20DEPLOY-blue" alt="hosttaldrove DEPLOY" width="300"></a>
----------
-<a href="https://youtube.com/@islamickcyberchatbot?si=F1IIc1As0gu3ijqk"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ʏᴏᴜᴛᴜʙᴇ%20ᴄʜᴀɴɴᴇʟ-blue" alt="🔰 ᴊᴏɪɴ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
+a>
+href="https://youtube.com/@islamickcyberchatbot?si=F1IIc1As0gu3ijqk"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ʏᴏᴜᴛᴜʙᴇ%20ᴄʜᴀɴɴᴇʟ-blue" alt="🔰 ᴊᴏɪɴ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
 
 --------------
  
