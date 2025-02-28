@@ -1,69 +1,47 @@
-module.exports.config = {
-  name: "info",
-  version: "1.0.1", 
-  hasPermssion: 0,
-  credits: "Ialamick Cyber Chat",
-  description: "Admin and Bot info.",
-  commandCategory: "...",
-  cooldowns: 1,
-  dependencies: 
-  {
-    "request":"",
-    "fs-extra":"",
-    "axios":""
-  }
-};
-module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
-const axios = global.nodemodule["axios"];
-const request = global.nodemodule["request"];
-const fs = global.nodemodule["fs-extra"];
-const time = process.uptime(),
-    hours = Math.floor(time / (60 * 60)),
-    minutes = Math.floor((time % (60 * 60)) / 60),
-    seconds = Math.floor(time % 60);
+const axios = require("axios");
+const request = require("request");
+const fs = require("fs-extra");
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.imgur.com/jfVTL4T.jpeg", 
 
-            "https://i.imgur.com/jfVTL4T.jpeg", 
+module.exports.config = {
+    name: "admin",
+    version: "1.0.0",
+    permission: 0,
+    credits: "ullash",
+    prefix: true,
+    description: "Show Owner Info",
+    category: "info",
+    usages: "",
+    cooldowns: 5
+};
 
-            "https://i.imgur.com/jfVTL4T.jpeg",
+module.exports.run = async function({ api, event }) {
+    var time = moment().tz("Asia/Dhaka").format("DD/MM/YYYY hh:mm:ss A");
 
-            "https://i.imgur.com/jfVTL4T.jpeg"];
-
-var callback = () => api.sendMessage({body:`•—»✨𝐀𝐝𝐦𝐢𝐧 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺
- •┄┅════❁🌺❁════┅┄•
-
-𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : 𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫 𝐂𝐡𝐚𝐭
-
-𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 : 𝟕 𝐀d𝐦𝐢𝐧 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 𝐓𝐡𝐢𝐬 𝐑𝐨𝐛𝐨𝐭
-
-•┄┅══❁CONCATET❁══┅┄• 
-
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐏𝐚𝐠𝐞 : https://www.facebook.com/profile.php?id=100081939442749
-
-𝐖𝐏  : wa.me/+8801859561262
-𝐖𝐏 : wa.me/+880 1309-991724
-𝐖𝐏 : wa.me/+880 1905-600093
-𝐖𝐏 : wa.me/+880 1771-717162
-𝐖𝐏 : wa.me/+880 1885-115218
-𝐖𝐏 : wa.me/+880 1763-899929
-𝐖𝐏 : wa.me/+880 1814-587247
-
-•┄┅═══❁🌺❁═══┅┄•\n🌺✨𝐎𝐭𝐡𝐞𝐫𝐬 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺\n •┄┅═══❁🌺❁═══┅┄•
-
-TYPE /help
-
-𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : ${global.config.BOTNAME}
-
-𝐁𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱 : ${global.config.PREFIX}
-
-•—»✨ 𝐔𝐩𝐭𝐢𝐦𝐞
-
-𝐓𝐨𝐝𝐚𝐲 𝐈𝐬 𝐓𝐢𝐦𝐞 : ${juswa} 
-
-𝐁𝐨𝐭 𝐈𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 ${hours}:${minutes}:${seconds}.
-
-𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠  ༄🌺\n｢🕋｣${global.config.BOTNAME}｢🕋｣`,attachment: fs.createReadStream(__dirname + "/cache/cyber.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/cyber.jpg")); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/cyber.jpg")).on("close",() => callback());
-   };
+    var callback = () => api.sendMessage({
+        body: `
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      🌟 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 🌟      
+┣━━━━━━━━━━━━━━━━━━━━━┫
+┃ 👤 𝐍𝐚𝐦𝐞      : 𝐮 𝐥 𝐥 𝐚 𝐬 𝐡 ッ
+┃ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫    : 𝐌𝐚𝐥𝐞
+┃ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧  : 𝐈𝐧 𝐂𝐨𝐦𝐩𝐥𝐢𝐜𝐚𝐭𝐞𝐝
+┃ 🎂 𝐀𝐠𝐞       : 21
+┃ 🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧  : 𝐈𝐬𝐥𝐚𝐦
+┃ 🏫 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : 𝐝𝐢𝐩𝐥𝐨𝐦𝐚 𝐢𝐧 𝐀𝐠𝐫𝐢𝐜𝐮𝐥𝐭𝐮𝐫𝐞
+┃ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬  : 𝐍𝐨𝐚𝐤𝐡𝐚𝐥𝐢, 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡
+┣━━━━━━━━━━━━━━━━━━━━━┫
+┃ 🎭 𝐓𝐢𝐤𝐭𝐨𝐤  : ullash01
+┃ 📢 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 : [𝐉𝐨𝐢𝐧 𝐍𝐨𝐰](https://t.me/mahbubu_shaon)
+┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://www.facebook.com/profile.php?id=100000654976375)
+┣━━━━━━━━━━━━━━━━━━━━━┫
+┃ 🕒 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐢𝐦𝐞: ${time}
+┗━━━━━━━━━━━━━━━━━━━━━┛
+        `,
+        attachment: fs.createReadStream(__dirname + "/cache/1.png")
+    }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.png"));
+  
+    return request(encodeURI(`https://graph.facebook.com/100000654976375/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
+        .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
+        .on('close', () => callback());
+};
