@@ -4,7 +4,7 @@ const fs = require("fs-extra");
 const moment = require("moment-timezone");
 
 module.exports.config = {
-    name: "admin",
+    name: "info",
     version: "1.0.0",
     permission: 0,
     credits: "ullash",
