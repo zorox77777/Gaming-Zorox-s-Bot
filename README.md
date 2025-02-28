@@ -1,19 +1,18 @@
 ---------
 
-###  🤍✨𝐂 𝐘 𝐁 𝐄 𝐑-𝐑 𝐀 𝐉 𝐈 𝐁✨🤍
-
+###  —͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️
 ❖ **`A Massanger  Multi Device Bot To Take Your Massanger To Another Level !`** ❖
 
 ----------
 ## CLICK <a href="https://github.com/islamickcyberchat404/ISLAMICK-CYBER-MIRAI-BOT/issues">HERE IF YOU ARE NEW TO BOTS</a>
 
 
-<img src='https://i.postimg.cc/hPQGnNWd/CYBER.jpg'/>
+<img src='https://i.imgur.com/ePDUcck.jpeg'/>
 
 -------
 
  <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`C Y B E R+R A J I B+M.G+BOT`" alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸+𝗰𝗵𝗮𝘁+𝗯𝗼𝘁+V2`" alt="">
 
 <br>
 
@@ -30,7 +29,7 @@
 </p>
 
 -----------
-<div align="center"><br> <img src="https://profile-counter.glitch.me/SILENT-SOBX-MD/count.svg" /><br>CYBER-RAJIB</div>
+<div align="center"><br> <img src="https://profile-counter.glitch.me/SILENT-SOBX-MD/count.svg" /><br>—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️</div>
 
 ------------
 
