@@ -99,7 +99,7 @@ jobs:
 
 ---------
 
-<a href="https://m.me/j/AbZEOcdMGQYprT74/"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ᴍᴀssᴀɴ%20ɢʀᴏᴜᴘ-red" alt="🔰 ᴍᴀssᴀɴ ɢʀᴏᴜᴘ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
+<a href="https://m.me/j/AbY9JRzH2X7k9weO/"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ᴍᴀssᴀɴ%20ɢʀᴏᴜᴘ-red" alt="🔰 ᴍᴀssᴀɴ ɢʀᴏᴜᴘ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
 
 -----------
 
