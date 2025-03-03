@@ -2,7 +2,7 @@ module.exports.config = {
         name: "help",
         version: "1.0.2",
         hasPermssion: 0,
-        credits: "MR. ALVI CHOWDHURY",
+        credits: "MAHBUB SHAON",
         description: "FREE SET-UP MESSENGER",
         commandCategory: "system",
         usages: "[Name module]",
