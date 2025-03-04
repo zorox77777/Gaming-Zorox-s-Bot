@@ -1,50 +1,52 @@
+const fs = require("fs");
+
 module.exports.config = {
   name: "prefix",
   version: "1.0.0",
-  permission: 0,
-  credits: "ryuko",
-  prefix: true,
-  description: "guide",
-  category: "system",
+  hasPermssion: 0,
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  description: "given prefix detail",
+  commandCategory: "Dành cho Admin",
   usages: "",
   cooldowns: 5,
 };
 
-const axios = require("axios");
-const fs = require("fs");
-
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body, senderID } = event;
-  
-  function out(data, attachment = null) {
-    api.sendMessage({ body: data, attachment }, threadID, messageID);
+
+  // যদি ক্র
+  if (this.config.credits !== "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭") { 
+    return api.sendMessage("আপনার স্ক্রিপ্টের ক্রেডিট পরিবর্তন করা হয়েছে!", threadID, messageID);
   }
 
-  var dataThread = await Threads.getData(threadID);
+  function out(data) {
+    api.sendMessage(data, threadID, messageID);
+  }
+
+  var dataThread = (await Threads.getData(threadID));
   var data = dataThread.data; 
   const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
   
-  const botNickname = "𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁";
-  const botOwnerID = "https://www.facebook.com/profile.php?id=100000654976375"; 
-  const videoURL = "https://i.imgur.com/eyHmgDU.mp4"; 
+  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong", "what prefix", "freefix", "what is the prefix", "bot dead", "bots dead", "where prefix", "what is bot", "what prefix bot", "how to use bot" ,"how use bot", "where are the bots","bot not working","bot is offline","where prefix","prefx","prfix","prifx","perfix","bot not talking","where is bot"];
 
-  var arr = ["mpre", "mprefix", "prefix", "command mark", "What is the prefix of the bot?", "PREFIX"];
-  arr.forEach(async (i) => {
+  arr.forEach(async i => {
     let str = i[0].toUpperCase() + i.slice(1);
     if (body === i.toUpperCase() || body === i || str === body) {
       const prefix = threadSetting.PREFIX || global.config.PREFIX;
-      const message = `🤖 Bot Nickname: ${botNickname}\n👤 Owner: ${botOwnerID}\n🔤 Bot Prefix: ${prefix}`;
 
-      try {
-        const response = await axios.get(videoURL, { responseType: "stream" });
-        out(message, response.data); 
-      } catch (error) {
-        out(message); 
-      }
+      // 
+      const gifURL = "https://i.imgur.com/gSW285Z.gif"; 
+
+      const msg = {
+        body: `This Is My Prefix ⇉ [ ${prefix} ]\n💝🥀𝐎𝐖𝐍𝐄𝐑:- ULLASH 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Ullash ッ\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/100000654976375\n👋For Any Kind Of Help Contact On Telegram channel Username 👉 @Online_income_bd7187`,
+        attachment: await global.utils.getStreamFromURL(gifURL) 
+      };
+
+      return api.sendMessage(msg, threadID);
     }
   });
 };
 
-module.exports.run = async ({ event, api }) => {
-  return api.sendMessage("no prefix commands", event.threadID);
+module.exports.run = async({ event, api }) => {
+  return api.sendMessage("error", event.threadID);
 };
