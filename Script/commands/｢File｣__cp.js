@@ -1,27 +1,25 @@
-const axios = require("axios");
-const request = require("request");
-const fs = require("fs-extra");
-
+/** THIS FULL BOT COMMAND FILE AND ALL API CREATE BY ISLAMICK CYBET CHAT DONT CHINGE THE MY ANY CODE  **/
 module.exports.config = {
   name: "\n",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "ullash ッ ☆𝐀𝐁𝐇𝐑𝐀𝐍𝐈𝐋☆",
-  description: "Sends random quotes with an image",
-  commandCategory: "image",
-  usages: "image",
-  cooldowns: 7,
+  credits: "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫 × Ullash ッ", //customised by —͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️
+  description: "Islamick post rendom by caption",
+  commandCategory: "poster",
+  usages: "/",
+  cooldowns: 11,
   dependencies: {
-    "request": "",
-    "fs-extra": "",
-    "axios": ""
+    "request":"",
+    "fs-extra":"",
+    "axios":""
   }
 };
 
-module.exports.onStart = async function ({ api, event }) {
-  // 
-  const quotes = [
-    "🤲💭🕋\n*** 🖤মনে রাখবেন: ইসলাম বিজয়ী হবেই হবে। \nআপনাকে সহ কিংবা আপনাকে ছাড়া।কিন্তু আপনি বিজয়ী হতে পারবেন না, ইসলামকে ছাড়া।✨✨✨\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currencies}) => {
+const axios = global.nodemodule["axios"];
+const request = global.nodemodule["request"];
+const fs = global.nodemodule["fs-extra"];
+   var hi = ["🤲💭🕋\n*** 🖤মনে রাখবেন: ইসলাম বিজয়ী হবেই হবে। \nআপনাকে সহ কিংবা আপনাকে ছাড়া।কিন্তু আপনি বিজয়ী হতে পারবেন না, ইসলামকে ছাড়া।✨✨✨\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
     "°°°﷽𝑨𝒍𝒉𝒂𝒎𝒅𝒖𝒍𝒊𝒍𝒍𝒂𝒉﷽\nআলহামদুলিল্লাহ! আমরা কতই না ভাগ্যবান, ইসলাম আমাদের ধর্ম এবং ইতিহাসে শ্রেষ্ঠ নবীর উম্মত আমরা।\n╚╩══••✠•❀•✠••══╩╝\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
     "🕋🕋🕋🕋\n___কখনোই বান্দাকে আল্লাহ বঞ্চিত করেন না।\n হয়তো আপনি যা চান,সেটায় আপনার কল্যাণ নেই, তাই আল্লাহ আপনাকে দেন নাই।🤲💭 🕋 🖤🥀\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
     "✿•𝐁𝐞𝐬𝐭 𝐋𝐢𝐧𝐞❥•\nইসলাম বলে, বিশ্ব ভ্রতিত্বের কথা, এমন এক পৃথিবী যেখানে সকল দেশের,\nসকল বর্ণের মানুষেরা একে অপরের ভাই ভাই।\n🌸”𝐀𝐥𝐡𝐚𝐦𝐝𝐮𝐥𝐢𝐥𝐥𝐚h”🌼\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
@@ -51,10 +49,10 @@ module.exports.onStart = async function ({ api, event }) {
     "🌞🌞🌞•••༐༐༐༐༐༐•••🌞🌞🌞\nশুনে রাখুন, “একমাত্র কুরআনই হল মানুষের সেরা পথনির্দেশক। যা রাব্বুল আলামিনের নির্দেশাবলী, যা কিনা মানুষের জীবনকে সুন্দর ও সফল করে তোলে\n🌞🌞🌞•••༐༐༐༐༐༐•••🌞🌞🌞\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
     " 〇ლ__♥❤💙💙\nরাতের তারার মতো তোমার চোখ জ্বলজ্বলে, তোমার সাথে থাকতে চাই সারা জীবন।এটাই আল্লাহর কাছে প্রার্থনা করি।\n♥ ´¨`♥•.¸¸.• ♥ ´¨`♥•.¸¸.•♥´¨` ♥\n\n\n—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️"
   ];
-
-  // Random images
-  const images = [
-    "https://i.imgur.com/s7lWVBQ.jpeg",
+;
+  var know = hi[Math.floor(Math.random() * hi.length)];
+  var link = [
+  "https://i.imgur.com/s7lWVBQ.jpeg",
     "https://i.imgur.com/Tj6adbm.jpeg",
     "https://i.imgur.com/L5ZEaPA.jpeg",
     "https://i.imgur.com/uXi1lrg.jpeg",
@@ -83,25 +81,8 @@ module.exports.onStart = async function ({ api, event }) {
     "https://i.imgur.com/6yjeFrc.jpeg",
     "https://i.imgur.com/vkLlOgs.jpeg",
     "https://i.imgur.com/X41jmrh.jpeg",
-    "https://i.imgur.com/ESHNJxr.jpeg"
-  ];
-
-  // 
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  const randomImage = images[Math.floor(Math.random() * images.length)];
-
-  // 
-  const imgPath = __dirname + "/cache/image.jpg";
-  request(randomImage)
-    .pipe(fs.createWriteStream(imgPath))
-    .on("close", () => {
-      api.sendMessage(
-        {
-          body: randomQuote,
-          attachment: fs.createReadStream(imgPath)
-        },
-        event.threadID,
-        () => fs.unlinkSync(imgPath)
-      );
-    });
-};
+    "https://i.imgur.com/ESHNJxr.jpeg",
+];
+	 var callback = () => api.sendMessage({body:` ${know} `,attachment: fs.createReadStream(__dirname + "/cyber.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cyber.jpg"));	
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cyber.jpg")).on("close",() => callback());
+   };
