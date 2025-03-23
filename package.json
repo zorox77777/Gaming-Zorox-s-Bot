@@ -1,7 +1,7 @@
 {
   "name": "CYBER",
   "version": "20.0.1",
-  "description": "MODE BY ULLASH", // 𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️
+  "description": "MODE BY ULLASH",
   "main": "CYBER.js",
   "engines": {
       "node": "20.x",
